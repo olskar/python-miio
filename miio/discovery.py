@@ -10,7 +10,7 @@ import zeroconf
 from . import (Device, Vacuum, ChuangmiPlug, PowerStrip, AirPurifier, AirFresh, Ceil,
                PhilipsBulb, PhilipsEyecare, PhilipsMoonlight, ChuangmiIr,
                AirHumidifier, WaterPurifier, WifiSpeaker, WifiRepeater,
-               Yeelight, Fan, Cooker, AirConditioningCompanion)
+               Yeelight, Fan, Cooker, AirConditioningCompanion, AqaraCamera)
 
 from .chuangmi_plug import (MODEL_CHUANGMI_PLUG_V1, MODEL_CHUANGMI_PLUG_V3,
                             MODEL_CHUANGMI_PLUG_M1, )
@@ -65,6 +65,7 @@ DEVICE_MAP = {
     "lumi-acpartner-v1": AirConditioningCompanion,
     "lumi-acpartner-v2": AirConditioningCompanion,
     "lumi-acpartner-v3": AirConditioningCompanion,
+    "lumi-camera-aq1": AqaraCamera,
     "yeelink-light-": Yeelight,
     "zhimi-fan-v2": partial(Fan, model=MODEL_FAN_V2),
     "zhimi-fan-v3": partial(Fan, model=MODEL_FAN_V3),
